@@ -1,0 +1,170 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "env" : {
+    "node": true,
+    "es6": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+
+    // Possible Errors (+ recommended ones)
+    "comma-dangle": [2, "never"],
+    "no-console": 0, // to delete to reactivate later (no console in prod env)
+    //"no-extra-parens": 2,
+    "valid-jsdoc": 2,
+
+    // Best Practices
+    "consistent-return": 2,
+    "curly": [2, "multi-or-nest", "consistent"],
+    "dot-notation": 1,
+    "dot-location": [1, "property"],
+    "eqeqeq": 2,
+    "guard-for-in": 1,
+    "no-caller": 2,
+    "no-div-regex": 1,
+    "no-else-return": 1,
+    //"no-empty-label": 2, // no-labels used
+    "no-eq-null": 2,
+    "no-eval": 2,
+    "no-extend-native": 2,
+    //"no-extra-bind": 2, // ko with IIFE
+    "no-fallthrough": 1,
+    "no-floating-decimal": 1,
+    "no-implicit-coercion": 0,
+    "no-implied-eval": 2,
+    "no-invalid-this": 2,
+    "no-iterator": 2,
+    "no-labels": 2,
+    "no-lone-blocks": 2,
+    //no-loop-func
+    "no-multi-spaces": 1,
+    "no-multi-str": 1,
+    "no-native-reassign": 2,
+    "no-new-func": 2,
+    "no-new-wrappers": 2,
+    "no-new": 1,
+    "no-octal-escape": 2,
+    "no-octal": 2,
+    //"no-param-reassign": [2, {"props": true}],
+    "no-proto": 2,
+    "no-redeclare": 1,
+    "no-return-assign": 1,
+    "no-script-url": 2,
+    "no-self-compare": 2,
+    "no-sequences": 1,
+    "no-throw-literal": 2,
+    "no-unused-expressions": [2, { "allowShortCircuit": true, "allowTernary": true }],
+    "no-useless-call": 2,
+    "no-useless-concat": 1,
+    "no-void": 1,
+    "no-with": 2,
+    "radix": 2,
+    // vars-on-top
+    "wrap-iife": [2, "outside"],
+    "yoda": [2, "never", {
+      "exceptRange": true,
+      "onlyEquality": false
+    }],
+
+
+    // Strict
+    "strict": [2, "global"],
+
+    // Variables
+    "no-delete-var": 2,
+    "no-label-var": 2,
+    "no-shadow-restricted-names": 2,
+    "no-shadow": 1,
+    "no-undef-init": 1,
+    "no-undef": 2,
+    "no-undefined" : 0,
+    "no-unused-vars": [1, {
+      "vars": "all",
+      "args": "none"
+    }],
+    "no-use-before-define": 1,
+
+    // Node.js and CommonJS
+    "callback-return": 1,
+    "global-require": 1,
+    "handle-callback-err": 1,
+    "no-mixed-requires": 1,
+    "no-new-require": 2,
+    "no-path-concat": 2,
+    "no-process-exit": 1,
+    "no-sync": 0,
+
+    // Stylistic Issues //TODO add Stylistic Issues rules
+    "array-bracket-spacing": [1, "never"],
+    "block-spacing": [1, "always"],
+    "brace-style": [1, "stroustrup", { "allowSingleLine": true }],
+    "camelcase": [2, {"properties": "always"}],
+    "comma-spacing": 2,
+    "computed-property-spacing": [2, "never"],
+    "consistent-this": [2, "self"],
+    "eol-last": 2,
+    //"func-names": 1,
+    //id-length
+    "indent": [2, 2, {"SwitchCase": 1}],
+    // key-spacing
+    "lines-around-comment": [2, {
+      "beforeBlockComment": true,
+      "beforeLineComment": false,
+      "allowBlockStart": true
+    }],
+    // linebreak-style
+    "max-nested-callbacks": [1, 3],
+    "new-cap": 0,
+    "new-parens": 2,
+    // newline-after-var
+    "no-array-constructor": 2,
+    "no-continue": 2,
+    "no-lonely-if": 2,
+    "no-mixed-spaces-and-tabs": [2, "smart-tabs"],
+    // no-multiple-empty-lines
+    "no-nested-ternary": 1,
+    "no-new-object": 2,
+    "no-restricted-syntax": [2, "WithStatement"],
+    "no-spaced-func": 2,
+    "no-trailing-spaces": 1,
+    "no-underscore-dangle": 1,
+    "no-unneeded-ternary": [2, {"defaultAssignment": true }],
+    // object-curly-spacing //TODO Ãƒ  regarder
+    "one-var": [2, "never"],
+    // operator-assignment
+    "operator-linebreak": [2, "before"],
+    "padded-blocks": [2, "never"],
+    "quotes": [2, "single", "avoid-escape"],
+    // quote-props // TODO Ãƒ  regarder
+    "require-jsdoc": 0,
+    "semi-spacing": [2, {"before": false, "after": true}],
+    "semi": [2, "always"],
+    "keyword-spacing": 2,
+    "space-before-blocks": 1,
+    "space-before-function-paren": [2, {"anonymous": "always", "named": "never"}],
+    "space-in-parens": [2, "never"],
+    "space-infix-ops": 1,
+    "space-unary-ops": [1, { "words": true, "nonwords": false }],
+    "spaced-comment": 0,
+
+
+
+    // es6 rules below
+    "arrow-parens": [1, "as-needed"],
+    "arrow-spacing": 1,
+    //generator-star-spacing
+    "no-class-assign": 2,
+    "no-const-assign": 2,
+    "no-dupe-class-members": 2,
+    "no-this-before-super": 2,
+    "no-var": 1,
+    //object-shorthand
+    //prefer-arrow-callback
+    "prefer-const": 1,
+    "prefer-spread": 0,
+    "prefer-reflect": 0,
+    "prefer-template": 2,
+    "require-yield": 1
+  }
+}

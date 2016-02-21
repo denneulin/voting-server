@@ -2,6 +2,8 @@
 logs
 *.log
 npm-debug.log*
+/.idea/
+/out/
 
 # Runtime data
 pids
@@ -31,4 +33,3 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
-/.idea/
